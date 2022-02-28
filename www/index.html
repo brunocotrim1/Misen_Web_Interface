@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MISEN Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title" onclick="test()">MISEN SEARCH</h1>
+    </header>
+    <h2>Case Search</h2>
+    <div id="search_section">
+        <input class="seach_box" type="text" placeholder="Type to Search!">
+        <a href="#"></a>
+        <div id="search_button_container">
+            <button onclick="test()" id="add_but">Add Image</button>
+            <button id="search_but" onclick="processSearch()">Search</button>
+            <input id="image_input" type="file" hidden accept="image/*">
+        </div>
+
+    </div>
+
+    <div id="image_search_container" hidden>
+        <div id="close_icon" onclick="closeProcessing()">x</div>
+        <div id="results_img">Results for: <span id="resultsFor"></span></div>
+        <img id="image_toSearch" width="250" height="250" hidden>
+    </div>
+
+    <div id="search_results"></div>
+
+    <div id="misen_update">
+        <div id="update_wrapper">
+            <h1 id="update_tittle">MISEN UPDATE</h1> <button id="update_show" onclick="showUpdate()">+</button>
+        </div><button id="addUpdate" onclick="updateClick()">Clique para adicionar ficheiro de Texto ou Imagem</button>
+    </div>
+    <input id="update_input" type="file" hidden accept="image/png, image/jpeg, .txt">
+    <script src="script.js"></script>
+
+</body>
+
+</html>

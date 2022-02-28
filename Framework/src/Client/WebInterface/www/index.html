@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BISEN Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title" onclick="test()">BISEN SEARCH</h1>
+    </header>
+    <h2>Case Search</h2>
+    <div id="search_section">
+        <input class="seach_box" type="text" placeholder="Type to Search!">
+        <a href="#"></a>
+        <div id="search_button_container">
+            <button onclick="test()" id="add_but">Add Image</button>
+            <button id="search_but" onclick="processSearch()">Search</button>
+            <input id="image_input" type="file" hidden>
+        </div>
+
+    </div>
+
+    <div id="image_search_container" hidden>
+        <div id="close_icon" onclick="closeProcessing()">x</div>
+        <div id="results_img">Results for: <span id="resultsFor"></span></div>
+        <img id="image_toSearch" width="250" height="250" hidden>
+    </div>
+
+    <div id="search_results"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
